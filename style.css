@@ -6,7 +6,7 @@ body, html {
 
 .container {
     display: grid;
-    grid-template: 1fr 5.5fr / 1fr 5.5fr;
+    grid-template: 1fr 5fr / 1fr 5fr;
     height: 100%;
     box-sizing: border-box;
 }
@@ -17,10 +17,28 @@ body, html {
 
 .sidebar {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 11fr;
 }
+
+.sidebar > div, .nav > div, .footer-nav > div {
+    border: 1px solid black;
+}
+
+.nav {
+    display: grid;
+    padding-bottom: 125%;
+}
+
 
 .header {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header > div {
+    border: 1px solid black;
 }
 
 .main-content {
