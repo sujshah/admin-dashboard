@@ -11,7 +11,7 @@ svg {
 
 .container {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 6fr;
+    grid-template: 1fr 5fr / minmax(150px, 1fr) 6fr;
     height: 100%;
     box-sizing: border-box;
 }
@@ -35,7 +35,7 @@ svg {
     align-items: center;
     justify-content: start;
     padding-left: 3vh;
-    font-size: 2.5vh;
+    font-size: 1.5vmax;
     /*padding: 10px;*/
 }
 
@@ -43,8 +43,7 @@ svg {
     color: white;
     font-weight: bolder;
     min-height: 1.5vh;
-    font-size: 1.7vh;
-
+    font-size: 1vmax;
 }
 
 .footer-nav > div, .main-content > div, .projects-grid > div, .announcements-grid > div, .announcements > div, .trending > div {
@@ -53,16 +52,17 @@ svg {
 
 .icon {
     padding-right: 1vh;
-    width: 2.5vh;
+    width: 1vmax;
     color: white;
+    vertical-align: text-top;
 }
 
 .page {
     margin: 0;
+    width: 1vmax;
 }
 
 .icon, .page {
-    vertical-align: center;
     display: inline-block;
 }
 
@@ -73,7 +73,7 @@ svg {
     /*justify-content: start;*/
     padding-left: 3vh;
     padding-top: 3vh;
-    gap: 1.2vh;
+    gap: 0.8vmax;
     /*grid-template-rows: repeat(10, fit-content(200%));*/
 }
 
