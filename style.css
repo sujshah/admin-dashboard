@@ -30,13 +30,19 @@ svg {
 .logo {
     color: white;
     font-weight: bold;
-    display: grid;
-    /*text-align: center;*/
-    align-items: center;
-    justify-content: start;
-    padding-left: 3vh;
+    display: inline-block;
+
+    padding-top: 3vh;
+    padding-left: 1.5vh;
     font-size: 1.5vmax;
-    /*padding: 10px;*/
+}
+
+.logo-text {
+    margin: 0;
+    display: inline-block;
+    height: 5vh;
+    vertical-align: text-top;
+
 }
 
 .main-item {
@@ -48,6 +54,14 @@ svg {
 
 .footer-nav > div, .main-content > div, .projects-grid > div, .announcements-grid > div, .announcements > div, .trending > div {
     border: 1px solid black;
+}
+
+.main-icon {
+    padding-right: 0.5vh;
+    color: white;
+    vertical-align: middle;
+    height: 3vmax;
+    width: 3vmax;
 }
 
 .icon {
@@ -69,12 +83,9 @@ svg {
 .nav {
     display: grid;
     padding-bottom: 125%;
-    /*align-items: center;*/
-    /*justify-content: start;*/
     padding-left: 3vh;
     padding-top: 3vh;
     gap: 0.8vmax;
-    /*grid-template-rows: repeat(10, fit-content(200%));*/
 }
 
 
