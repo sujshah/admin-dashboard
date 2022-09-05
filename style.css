@@ -51,7 +51,8 @@ svg {
     font-size: 1vmax;
 }
 
-.footer-nav > div, .main-content > div, .projects-grid > div, .announcements-grid > div, .announcements > div, .trending > div {
+.footer-nav > div, .main-content > div, .projects-grid > div, .announcements-grid > div, .announcements > div, .trending > div
+{
     border: 1px solid black;
 }
 
@@ -97,6 +98,62 @@ svg {
 .header > div {
     border: 1px solid black;
 }
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 8% 60% 8% 8% 1fr;
+}
+
+.search-button {
+    color: black;
+    justify-self: right;
+    align-self: center;
+    padding-right: 10px;
+    display: grid;
+}
+
+.search-area {
+    appearance: none;
+    justify-self: left;
+    align-self: center;
+    width: 80%;
+}
+
+input#query {
+    width: 100%;
+    height: 3vh;
+    background-color: rgb(226, 232, 240);
+    border-radius: 15px;
+    border: none;
+}
+
+.alert-button {
+    color: black;
+    justify-self: right;
+    align-self: center;
+    display: grid;
+}
+
+.profile-logo {
+    color: black;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+
+.profile-name {
+    justify-self: left;
+    display: grid;
+}
+
+.profile-name-text {
+    font-weight: bold;
+    font-size: 1.2vmax;
+    vertical-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
 
 .main-content {
     grid-row: 2 / 3;
