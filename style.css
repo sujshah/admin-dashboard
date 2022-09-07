@@ -92,12 +92,9 @@ svg {
 .header {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
 }
 
-.header > div {
-    border: 1px solid black;
-}
 
 .search-bar {
     display: grid;
@@ -155,6 +152,82 @@ input#query {
     vertical-align: center;
     justify-self: center;
     align-self: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 11% repeat(2, 1fr);
+}
+
+.profile-logo-large {
+    color: black;
+    justify-self: right;
+    align-self: center;
+    padding-right: 3%;
+}
+
+.profile-name-welcome {
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.hi-there {
+    padding-left: 2%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+.username {
+    padding-left: 2%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.content-upload {
+    display: grid;
+    grid-template-columns: 4fr 3.5fr 4fr;
+    justify-content: space-evenly;
+}
+
+.upload-button, .upload-button-side {
+    appearance: none;
+    background-color: rgb(25, 146, 212);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 4vh;
+    border: none;
+    /*padding: 0.1vh 3vh;*/
+    width: 13vh;
+    height: 5vh;
+}
+
+.upload-button-side {
+    /*justify-self: right;*/
+}
+
+.button-container {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.button-container-left {
+    justify-self: right;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.button-container-right {
+    justify-self: left;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
