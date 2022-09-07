@@ -127,6 +127,10 @@ input#query {
     font-size: 1rem;
 }
 
+input#query:focus {
+    outline: 3px solid rgb(25, 146, 212);
+}
+
 .alert-button {
     color: black;
     justify-self: right;
